@@ -1,0 +1,39 @@
+{
+  "background": "",
+  "layers": [
+    {
+      "id": "template_text_1",
+      "type": "text",
+      "text": "MODERN FLYER TITLE",
+      "x": 300,
+      "y": 150,
+      "width": 400,
+      "height": 50,
+      "rotation": 0,
+      "visible": true,
+      "locked": false,
+      "fontSize": 36,
+      "fontFamily": "Inter",
+      "fontWeight": "800",
+      "color": "#111827",
+      "textAlign": "center"
+    },
+    {
+      "id": "template_text_2",
+      "type": "text",
+      "text": "Customize this modern layout with your own details.",
+      "x": 300,
+      "y": 220,
+      "width": 350,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "locked": false,
+      "fontSize": 18,
+      "fontFamily": "Inter",
+      "fontWeight": "400",
+      "color": "#4B5563",
+      "textAlign": "center"
+    }
+  ]
+}

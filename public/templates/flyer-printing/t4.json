@@ -1,0 +1,22 @@
+{
+  "background": "",
+  "layers": [
+    {
+      "id": "template_text_1",
+      "type": "text",
+      "text": "MINIMAL FLYER TITLE",
+      "x": 300,
+      "y": 700,
+      "width": 300,
+      "height": 30,
+      "rotation": 0,
+      "visible": true,
+      "locked": false,
+      "fontSize": 24,
+      "fontFamily": "Inter",
+      "fontWeight": "300",
+      "color": "#374151",
+      "textAlign": "center"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "background": "",
+  "layers": [
+    {
+      "id": "template_text_1",
+      "type": "text",
+      "text": "CORPORATE FLYER TITLE",
+      "x": 300,
+      "y": 100,
+      "width": 500,
+      "height": 50,
+      "rotation": 0,
+      "visible": true,
+      "locked": false,
+      "fontSize": 40,
+      "fontFamily": "Inter",
+      "fontWeight": "700",
+      "color": "#1E40AF",
+      "textAlign": "center"
+    }
+  ]
+}

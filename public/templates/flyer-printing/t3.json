@@ -1,0 +1,22 @@
+{
+  "background": "",
+  "layers": [
+    {
+      "id": "template_text_1",
+      "type": "text",
+      "text": "CREATIVE FLYER TITLE",
+      "x": 300,
+      "y": 400,
+      "width": 450,
+      "height": 50,
+      "rotation": -10,
+      "visible": true,
+      "locked": false,
+      "fontSize": 42,
+      "fontFamily": "Inter",
+      "fontWeight": "900",
+      "color": "#9333EA",
+      "textAlign": "center"
+    }
+  ]
+}
