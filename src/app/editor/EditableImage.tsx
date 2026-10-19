@@ -189,12 +189,15 @@ export default function EditableImage({ layer, scaleFactor, boundsRef }: Props) 
           ref={handleTrRef}
           flipEnabled={false}
           keepRatio={true}
-          boundBoxFunc={(oldBox, newBox) => {
-            if (newBox.width < 2 || newBox.height < 2) {
-              return oldBox;
-            }
-            return newBox;
-          }}
+          boundBoxFunc={(
+  oldBox: { x: number; y: number; width: number; height: number; rotation: number },
+  newBox: { x: number; y: number; width: number; height: number; rotation: number }
+) => {
+  if (newBox.width < 2 || newBox.height < 2) {
+    return oldBox;
+  }
+  return newBox;
+}}
           enabledAnchors={["top-left", "top-right", "bottom-left", "bottom-right"]}
           borderStroke="#9333ea"
           anchorStroke="#9333ea"

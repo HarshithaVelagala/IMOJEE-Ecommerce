@@ -11,7 +11,7 @@ export default function SafeAreaOverlay({
     width = 600,
     height = 800,
 }: Props) {
-    const { isOutsideSafe } = useLayer();
+    const isOutsideSafe = false;
     const bleed = 10;
     const safe = 30;
 

@@ -397,7 +397,13 @@ export default function ProductDetails({ product }: { product: Product }) {
             <div className="flex items-center gap-6 pt-2">
               <button 
                 type="button" 
-                onClick={() => { addCompare(product); showToast("Added to compare", []); }}
+                onClick={() => {
+  const added = addCompare(product.id);
+  showToast(
+    added ? "Added to compare" : "Already added or compare list is full",
+    []
+  );
+}}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 hover:text-purple-800 transition-colors cursor-pointer"
               >
                 <ArrowLeftRight className="w-4 h-4" />
@@ -405,7 +411,7 @@ export default function ProductDetails({ product }: { product: Product }) {
               </button>
               <button 
                 type="button" 
-                onClick={() => toggleWishlist(product)}
+                onClick={() => toggleWishlist(product.id)}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-neutral-600 hover:text-neutral-900 transition-colors cursor-pointer"
               >
                 <Heart className={`w-4 h-4 ${hasWish(product.id) ? "fill-red-500 text-red-500" : ""}`} />

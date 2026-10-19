@@ -195,12 +195,15 @@ export default function EditableShape({ layer, scaleFactor, boundsRef }: Props) 
         <Transformer
           ref={handleTrRef}
           flipEnabled={false}
-          boundBoxFunc={(oldBox, newBox) => {
-            if (newBox.width < 2 || newBox.height < 2) {
-              return oldBox;
-            }
-            return newBox;
-          }}
+          boundBoxFunc={(
+  oldBox: { x: number; y: number; width: number; height: number; rotation: number },
+  newBox: { x: number; y: number; width: number; height: number; rotation: number }
+) => {
+  if (newBox.width < 2 || newBox.height < 2) {
+    return oldBox;
+  }
+  return newBox;
+}}
           enabledAnchors={
             layer.shapeType === "line"
               ? ["middle-left", "middle-right"]

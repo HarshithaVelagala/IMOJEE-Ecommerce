@@ -271,12 +271,15 @@ export default function EditableText({ layer, scaleFactor, boundsRef }: Props) {
         <Transformer
           ref={handleTrRef}
           flipEnabled={false}
-          boundBoxFunc={(oldBox, newBox) => {
-            if (newBox.width < 10) {
-              return oldBox;
-            }
-            return newBox;
-          }}
+          boundBoxFunc={(
+  oldBox: { x: number; y: number; width: number; height: number; rotation: number },
+  newBox: { x: number; y: number; width: number; height: number; rotation: number }
+) => {
+  if (newBox.width < 10) {
+    return oldBox;
+  }
+  return newBox;
+}}
           enabledAnchors={["middle-left", "middle-right"]}
           borderStroke="#9333ea"
           anchorStroke="#9333ea"
